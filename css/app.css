@@ -211,7 +211,7 @@
   label {
     display: inline-block;
     width: 70%; /* Ancho ajustable según necesidad */
-    height: 25px; /* Altura ajustable según necesidad */
+    height: 20px; /* Altura ajustable según necesidad */
     margin-bottom: 5px; /* Espacio entre cada radio button */
     cursor: pointer;
     position: relative; /* Añadido para posicionar el span */

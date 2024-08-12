@@ -45,7 +45,7 @@
 <!-- empiezo radio buttons -->
 
 <div class="container ">
-    <h1 class="text-center pt-1 fuente-Abel fs-5 fw-bold">Selecciona el color de la banda: </h1>
+    <h1 class="text-center fuente-Abel fs-5 fw-bold text-accent">Selecciona el color de la banda: </h1>
 
     <div class="row">
         <!-- Primera lista de radio buttons -->
@@ -153,6 +153,11 @@
 
                 <input type="radio" name="color3" id="blanco3" value="blanco" />
                 <label for="blanco3"><span class="blanco"></span></label>
+                <input type="radio" name="color3" id="dorado3" value="dorado" />
+                <label for="dorado3"><span class="dorado"></span></label>
+
+                <input type="radio" name="color3" id="plateado3" value="plateado" />
+                <label for="plateado3"><span class="plateado"></span></label>
             </div>
         </div>
 
@@ -166,23 +171,7 @@
                 <input type="radio" name="color4" id="rojo4" value="rojo" />
                 <label for="rojo4"><span class="rojo"></span></label>
 
-                <input type="radio" name="color4" id="naranja4" value="naranja" />
-                <label for="naranja4"><span class="naranja"></span></label>
-
-                <input type="radio" name="color4" id="amarillo4" value="amarillo" />
-                <label for="amarillo4"><span class="amarillo"></span></label>
-
-                <input type="radio" name="color4" id="verde4" value="verde" />
-                <label for="verde4"><span class="verde"></span></label>
-
-                <input type="radio" name="color4" id="azul4" value="azul" />
-                <label for="azul4"><span class="azul"></span></label>
-
-                <input type="radio" name="color4" id="violeta4" value="violeta" />
-                <label for="violeta4"><span class="violeta"></span></label>
-
-                <input type="radio" name="color4" id="gris4" value="gris" />
-                <label for="gris4"><span class="gris"></span></label>
+                
 
                 <input type="radio" name="color4" id="dorado4" value="dorado" />
                 <label for="dorado4"><span class="dorado"></span></label>
