@@ -1,9 +1,12 @@
 :root {
 
-    --primary: #D7D4CD;
-    --secondary: #392866;
-    --accent: #E64A0D;
+    --primary: #0e2c3f;
+    --secondary: #3eea47;
+    --accent: #bcff39;
 
+}
+.quitar-linea{
+  text-decoration: none;
 }
 
 
@@ -222,7 +225,7 @@
     height: 100%;
     border: 1px solid ;
     transition: transform 0.2s ease-in-out;
-    border-radius: 20%;
+    border-radius: 10%;
   }
   
   /* Estilos para cada color */
