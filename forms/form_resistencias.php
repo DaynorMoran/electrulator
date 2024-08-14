@@ -32,7 +32,7 @@
             </div>
             <div class="col-md-6">
                 <div class="row">
-                    <h1 class="text-center fw-bold fs-4 fuente-Abel text-accent my-2">Resultado:</h1>
+                    <h1 class="text-center  fs-4 fuente-Abel text-accent my-2">Resultado:</h1>
                     <h1 class="text-center  fs-4 fuente-Abel text-secondary" id="resultado">330 Ω ±5%</h1><span>
                     </span>
 
@@ -51,10 +51,10 @@
 
         <div class="row">
             <!-- Primera lista de radio buttons -->
-            <div class="col-3 mb-4">
-                <h3 class="text-center mb-3 fuente-Abel fs-6 text-accent">Primera Banda</h3>
+            <div class="col-3 mb-4 ">
+                <h3 class="mb-3 fuente-Abel fs-6 text-accent ms-0 ms-md-5">Primera Banda</h3>
                 <div class="radio-buttons">
-                    
+
 
                     <input type="radio" name="color1" id="marron1" value="marron" onclick="obtenerBanda1(this)" />
                     <label for="marron1"><span class="marron"></span></label>
@@ -88,7 +88,7 @@
 
             <!-- Segunda lista de radio buttons -->
             <div class="col-3 mb-4">
-                <h3 class="text-center mb-3 fuente-Abel fs-6 text-accent">Segunda Banda</h3>
+                <h3 class="mb-3 fuente-Abel fs-6 text-accent ms-0 ms-md-5">Segunda Banda</h3>
                 <div class="radio-buttons">
                     <input type="radio" name="color2" id="negro2" value="negro" onclick="obtenerBanda2(this)" />
                     <label for="negro2"><span class="negro"></span></label>
@@ -125,7 +125,7 @@
 
             <!-- Tercera lista de radio buttons -->
             <div class="col-3 mb-4">
-                <h3 class="text-center mb-3 fuente-Abel fs-6 text-accent">Tercera Banda</h3>
+                <h3 class="mb-3 fuente-Abel fs-6 text-accent ms-0 ms-md-5">Tercera Banda</h3>
                 <div class="radio-buttons">
                     <input type="radio" name="color3" id="negro3" value="negro" onclick="obtenerBanda3(this)" />
                     <label for="negro3"><span class="negro"></span></label>
@@ -167,7 +167,7 @@
 
             <!-- Cuarta lista de radio buttons (Tolerancia) -->
             <div class="col-3 mb-4">
-                <h3 class="text-center mb-3 fuente-Abel fs-6 text-accent">Banda de Tolerancia</h3>
+                <h3 class="mb-3 fuente-Abel fs-6 text-accent ms-0 ms-md-5">Banda de Tolerancia</h3>
                 <div class="radio-buttons">
                     <input type="radio" name="color4" id="marron4" value="marron" onclick="obtenerBanda4(this)" />
                     <label for="marron4"><span class="marron"></span></label>
@@ -178,13 +178,13 @@
                     <input type="radio" name="color4" id="verde4" value="verde" onclick="obtenerBanda4(this)" />
                     <label for="verde4"><span class="verde"></span></label>
 
-                    <input type="radio" name="color4" id="azul4" value="azul" onclick="obtenerBanda4(this)"/>
+                    <input type="radio" name="color4" id="azul4" value="azul" onclick="obtenerBanda4(this)" />
                     <label for="azul4"><span class="azul"></span></label>
 
-                    <input type="radio" name="color4" id="violeta4" value="violeta" onclick="obtenerBanda4(this)"/>
+                    <input type="radio" name="color4" id="violeta4" value="violeta" onclick="obtenerBanda4(this)" />
                     <label for="violeta4"><span class="violeta"></span></label>
 
-                    <input type="radio" name="color4" id="gris4" value="gris" onclick="obtenerBanda4(this)"/>
+                    <input type="radio" name="color4" id="gris4" value="gris" onclick="obtenerBanda4(this)" />
                     <label for="gris4"><span class="gris"></span></label>
 
                     <input type="radio" name="color4" id="dorado4" value="dorado" checked
@@ -198,8 +198,39 @@
             </div>
         </div>
     </div>
-
     <!-- fin radio butons -->
+    <!-- boton flotante -->
+
+    <div class="dropup position-fixed bottom-0 end-0 m-4">
+        <button class="btn btn-primary rounded-circle bg-accent text-primary" type="button" id="dropupButton" data-bs-toggle="dropdown"
+            aria-expanded="false" style="width: 50px; height: 50px;">
+            <i class="bi bi-list"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end  bg-primary custom-border">
+            <li>
+                <a href="../index.html" class="text-center quitar-linea text-accent fuente-Abel">
+                    <h1 class="fs-5">Inicio</h1>
+                </a>
+            </li>
+            <hr class="text-accent">
+            <li>
+                <a href="../forms/form_capacitores.php" class="text-center quitar-linea text-accent fuente-Abel">
+                    <h1 class="fs-5">Calcular Capacitores</h1>
+                </a>
+            </li>
+            <hr class="text-accent">
+            <li >
+                <a href="../forms/form_bases.php" class="text-center quitar-linea text-accent fuente-Abel">
+                    <h1 class="fs-5">Calculadora de Bases</h1>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <!-- boton flotante -->
+
+
 
 
     <footer class="bg-secondary text-white py-2 mt-5 mt-auto">
@@ -208,11 +239,12 @@
             <div class="container">
                 <div class="row flex-column-reverse flex-md-row align-items-center">
                     <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <p class="text-primary fuente-Abel">"❤️La educación es el arma más poderosa que puedes usar para cambiar el mundo."
+                        <p class="text-primary fuente-Abel">"❤️La educación es el arma más poderosa que puedes usar para
+                            cambiar el mundo."
                             - Nelson Mandela</p>
                     </div>
                     <div class="col-12 col-md-6 text-center text-md-end mb-3 mb-md-0">
-                        <button class="btn btn-dark">
+                        <button class="button-git">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -220,7 +252,7 @@
                                     fill="white"></path>
                             </svg>
                             <a class="quitar-linea" href="https://github.com/DaynorMoran" target="blank">
-                                <span class="ms-3 text-accent ">Visitanos en GitHub</span>
+                                <span class="ms-3 text-accent fw-light fuente-Abel">Visitanos en GitHub</span>
                             </a>
                         </button>
                     </div>
@@ -229,7 +261,7 @@
         </div>
     </footer>
     <!-- agrego boootstrap 5 JS↓↓↓ -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <!-- agrego boootstrap 5 JS↓↓↓ -->
 
 
@@ -244,40 +276,44 @@
             valoresSeleccionados[0] = radioButton.id; // Almacena el valor en el vector
 
             let resultado = calcularResistencia(valoresSeleccionados);
-            console.log(`Resistencia: ${resultado.valor} ohms ${resultado.tolerancia}`);
-            
-            document.getElementById('resultado').innerText = `${resultado.valor} Ω ${resultado.tolerancia}`;
 
+            document.getElementById('resultado').innerHTML = 
+            `${resultado.valor} Ω  ${resultado.tolerancia} <br>
+                ${resultado.kiloohmios} kΩ ${resultado.tolerancia} <br>
+                ${resultado.megaohmios} MΩ ${resultado.tolerancia} `;
         }
 
         function obtenerBanda2(radioButton) {
-            //console.log("Banda 2:", radioButton.id);
             valoresSeleccionados[1] = radioButton.id; // Almacena el valor en el vector
 
             let resultado = calcularResistencia(valoresSeleccionados);
-            console.log(`Resistencia: ${resultado.valor} ohms ${resultado.tolerancia}`);
 
-            document.getElementById('resultado').innerText = `${resultado.valor} Ω ${resultado.tolerancia}`;
+            document.getElementById('resultado').innerHTML = 
+            `${resultado.valor} Ω  ${resultado.tolerancia} <br>
+                ${resultado.kiloohmios} kΩ ${resultado.tolerancia} <br>
+                ${resultado.megaohmios} MΩ ${resultado.tolerancia} `;
         }
 
         function obtenerBanda3(radioButton) {
-            //console.log("Banda 3:", radioButton.id);
             valoresSeleccionados[2] = radioButton.id; // Almacena el valor en el vector
 
             let resultado = calcularResistencia(valoresSeleccionados);
-            console.log(`Resistencia: ${resultado.valor} ohms ${resultado.tolerancia}`);
 
-            document.getElementById('resultado').innerText = `${resultado.valor} Ω ${resultado.tolerancia}`;
+            document.getElementById('resultado').innerHTML = 
+            `${resultado.valor} Ω  ${resultado.tolerancia} <br>
+                ${resultado.kiloohmios} kΩ ${resultado.tolerancia} <br>
+                ${resultado.megaohmios} MΩ ${resultado.tolerancia} `;
         }
 
         function obtenerBanda4(radioButton) {
-            //console.log("Banda 4:", radioButton.id);
             valoresSeleccionados[3] = radioButton.id; // Almacena el valor en el vector
 
             let resultado = calcularResistencia(valoresSeleccionados);
-            console.log(`Resistencia: ${resultado.valor} ohms ${resultado.tolerancia}`);
 
-            document.getElementById('resultado').innerText = `${resultado.valor} Ω ${resultado.tolerancia}`;
+            document.getElementById('resultado').innerHTML = 
+            `${resultado.valor} Ω  ${resultado.tolerancia} <br>
+                ${resultado.kiloohmios} kΩ ${resultado.tolerancia} <br>
+                ${resultado.megaohmios} MΩ ${resultado.tolerancia} `;
         }
 
         // FUncion que calcula el valor de la resistencia:
@@ -297,13 +333,13 @@
             };
 
             const tolerancias = {
-                'marron': '±1%', 
-                'rojo': '±2%', 
+                'marron': '±1%',
+                'rojo': '±2%',
                 'verde': '±0.5%',
-                'azul': '±0.25%', 
-                'violeta': '±0.1%', 
+                'azul': '±0.25%',
+                'violeta': '±0.1%',
                 'gris': '±0.05%',
-                'dorado': '±5%', 
+                'dorado': '±5%',
                 'plata': '±10%'
             };
 
@@ -325,13 +361,26 @@
 
             let resistencia = parseInt(valor) * multiplicador;
 
+            let valorenK = convertirOhmiosAKiloohmios(resistencia);
+
+            let valorenM = convertirOhmiosAMegaohmios(resistencia);
+
             return {
                 valor: resistencia,
-                tolerancia: tolerancia
+                tolerancia: tolerancia,
+                kiloohmios: valorenK,
+                megaohmios: valorenM
             };
         }
 
-        
+        function convertirOhmiosAKiloohmios(valorOhmios) {
+            return valorOhmios / 1000;
+        }
+
+        function convertirOhmiosAMegaohmios(valorOhmios) {
+            return valorOhmios / 1000000;
+        }
+
 
 
     </script>

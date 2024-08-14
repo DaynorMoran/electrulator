@@ -111,8 +111,36 @@
     </div>
 
 
+    <!-- boton flotante -->
 
+    <div class="dropup position-fixed bottom-0 end-0 m-4">
+        <button class="btn btn-primary rounded-circle bg-accent text-primary" type="button" id="dropupButton" data-bs-toggle="dropdown"
+            aria-expanded="false" style="width: 50px; height: 50px;">
+            <i class="bi bi-list"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end  bg-primary custom-border">
+            <li>
+                <a href="../index.html" class="text-center quitar-linea text-accent fuente-Abel">
+                    <h1 class="fs-5">Inicio</h1>
+                </a>
+            </li>
+            <hr class="text-accent">
+            <li>
+                <a href="../forms/form_resistencias.php" class="text-center quitar-linea text-accent fuente-Abel">
+                    <h1 class="fs-5">Calcular resistencias</h1>
+                </a>
+            </li>
+            <hr class="text-accent">
+            <li >
+                <a href="../forms/form_bases.php" class="text-center quitar-linea text-accent fuente-Abel">
+                    <h1 class="fs-5">Calculadora de Bases</h1>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
 
+    <!-- boton flotante -->
 
 
 
@@ -122,11 +150,12 @@
             <div class="container">
                 <div class="row flex-column-reverse flex-md-row align-items-center">
                     <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <p class="text-primary fuente-Abel">"❤️La educación es el arma más poderosa que puedes usar para cambiar el mundo."
+                        <p class="text-primary fuente-Abel">"❤️La educación es el arma más poderosa que puedes usar para
+                            cambiar el mundo."
                             - Nelson Mandela</p>
                     </div>
                     <div class="col-12 col-md-6 text-center text-md-end mb-3 mb-md-0">
-                        <button class="btn btn-dark">
+                        <button class="button-git">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -134,11 +163,13 @@
                                     fill="white"></path>
                             </svg>
                             <a class="quitar-linea" href="https://github.com/DaynorMoran" target="blank">
-                                <span class="ms-3 text-accent ">Visitanos en GitHub</span>
+                                <span class="ms-3 text-accent fw-light fuente-Abel">Visitanos en GitHub</span>
                             </a>
                         </button>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </footer>
@@ -171,7 +202,7 @@
             var valorEnPf = valorBase * Math.pow(10, exponente);
             console.log("Valor en pF: " + valorEnPf);
 
-            
+
             // Mostrar resultados
             mostrarResultados(codigo, valorEnPf, tension, tolerancia);
         }
@@ -286,18 +317,13 @@
                     return 'Desconocido';
             }
         }
-
         // Ejemplo de uso:
         console.log(obtenerTension('1A')); // Devuelve '10VDC'
         console.log(obtenerTension('2J')); // Devuelve '630VDC'
-
-
-
-
     </script>
 
     <!-- agrego boootstrap 5 JS↓↓↓ -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -41,10 +41,6 @@
     font-family: 'Abel-Regular';
 }
 
-.fuente-Honk {
-    font-family: 'Honk';
-}
-
 .fuente-Bebas {
     font-family: 'BebasNeue-Regular';
 }
@@ -136,13 +132,13 @@
 /*FIN CARDS*/
 
 /*BOTON GITHUB*/
-.button {
+.button-git {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 15px;
     gap: 15px;
-    background-color: #181717;
+    background-color: var(--primary);
     outline: 3px #181717 solid;
     outline-offset: -3px;
     border-radius: 5px;
@@ -152,7 +148,7 @@
     margin: auto; /* Centra el botón horizontal y verticalmente */
 
   }
-  .button .text {
+  .button-git .text {
     color: white;
     font-weight: 700;
     font-size: 1em;
@@ -161,19 +157,22 @@
     display: flex; /* Usa flexbox para alinear verticalmente */
     align-items: center; /* Centra verticalmente el contenido */
   }
-  .button svg path {
+  .button-git svg path {
     transition: 400ms;
   }
   
-  .button:hover {
-    background-color: transparent;
+  .button-git:hover {
+    background-color: #254961;
+    transform: scale(1.1);
+
+    
   }
   
-  .button:hover .text {
-    color: #181717;
+  .button-git:hover .text {
+    color: #181717 ;
   }
   
-  .button:hover svg path {
+  .button-git :hover svg path {
     fill: #181717;
   }
   
@@ -266,3 +265,13 @@
 
 
 /* boton */
+
+
+
+/* boton flotante */
+.dropup {
+  z-index: 1030;
+}
+
+/* fin boton flotante */
+
