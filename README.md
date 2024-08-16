@@ -5,7 +5,7 @@ https://electrulator.zya.me
 **Electrulator**
 
 Electrulator es una colección de herramientas electrónicas diseñadas para facilitar cálculos y conversiones comunes en el ámbito de la electrónica. Desde el cálculo de resistencias y capacitores hasta la conversión de unidades, Electrulator está pensado para estudiantes, entusiastas y profesionales que desean explorar y aplicar conceptos fundamentales de manera práctica y educativa.
-
+![2024-08-14 16_32_14-Greenshot](https://github.com/user-attachments/assets/073a664b-be29-47e2-befd-67f67c100d94)
 Características principales:
 
 Calculadora de Código de Colores de Resistencias: Determine el valor de una resistencia a partir de su código de colores estándar.
